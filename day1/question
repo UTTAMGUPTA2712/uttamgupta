@@ -1,0 +1,20 @@
+Day 1 
+
+First half
+
+Introduction & System setup and installation =>
+Basic class for overall concept => 
+Basic javascript practice => 
+
+Second half
+
+Palindrome Algorithm 
+Create a function that receives an array of numbers and returns an array containing only the positive numbers 
+Find the maximum number in an array of numbers 
+Print the first 10 Fibonacci numbers without recursion 
+Create a function that will return a Boolean specifying if a number is prime 
+Print the first 100 prime numbers 
+Create a function that will return in an array the first "nPrimes" prime numbers greater than a particular number "startAt" 
+Rotate an array to the left 1 position without using shift
+Reverse an array 
+Reverse a string 
