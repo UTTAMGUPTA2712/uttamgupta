@@ -1,11 +1,13 @@
-function shift(s){
-    let a=s[0]
-    let i
-    for(i=0;i<s.length;i++){
-        s[i]=s[i+1]
+// Rotate an array to the left 1 position without using shift
+
+function shift(s) {
+    let a = s[0];
+    let i;
+    for (i = 0; i < s.length; i++) {
+        s[i] = s[i + 1];
     }
-    s[i-1]=a
-    console.log(s)
+    s[i - 1] = a;
+    console.log(s);
 }
 
-shift([3,1,5,34,45,2,54,23])
+shift([3, 1, 5, 34, 45, 2, 54, 23]);

@@ -18,3 +18,7 @@ Create a function that will return in an array the first "nPrimes" prime numbers
 Rotate an array to the left 1 position without using shift
 Reverse an array 
 Reverse a string 
+
+git remote add origin https://github.com/UTTAMGUPTA2712/uttamgupta.git
+git branch -M main
+git push -u origin main
