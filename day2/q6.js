@@ -29,24 +29,24 @@ function mergeSortRec(arr) {
 function merge(leftarr, rightarr){
     const result = [];
 
-    let iL = 0;
-    let iR = 0;
-    while (iL < leftarr.length && iR < rightarr.length) {
-        if (leftarr[iL] < rightarr[iR]) {
-            result.push(leftarr[iL]);
-            iL++;
+    let il = 0;
+    let ir = 0;
+    while (il < leftarr.length && ir < rightarr.length) {
+        if (leftarr[il] < rightarr[ir]) {
+            result.push(leftarr[il]);
+            il++;
         } else {
-            result.push(rightarr[iR]);
-            iR++;
+            result.push(rightarr[ir]);
+            ir++;
         }
     }
-    while (iL < leftarr.length) {
-        result.push(leftarr[iL]);
-        iL++;
+    while (il < leftarr.length) {
+        result.push(leftarr[il]);
+        il++;
     }
-    while (iR < rightarr.length) {
-        result.push(rightarr[iR]);
-        iR++;
+    while (ir < rightarr.length) {
+        result.push(rightarr[ir]);
+        ir++;
     }
 
     return result;
