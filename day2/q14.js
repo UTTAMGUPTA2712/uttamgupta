@@ -11,3 +11,32 @@
 // Example 3:
 // Input: root = []
 // Output: []
+
+function set(root) {
+    // Edge case: when root node is empty
+    if (!root) return [];
+    
+    // Initialize
+    let result = [];
+    let queue = [root];
+    let level = 1;
+    
+    while (queue[0]) {
+        let size = queue.length;
+        let arr = [];
+        
+        while (size--) {
+            let node = queue.shift(); // dequeue
+            
+            level % 2 ? arr.push(node.val) : arr.unshift(node.val);
+            
+            node.left && queue.push(node.left); // enqueue
+            node.right && queue.push(node.right); // enqueue
+        }
+        
+        result.push(arr);
+        level++;
+    }
+    
+    return result;
+};

@@ -15,3 +15,27 @@
 // Input: s = "(*))"
 // Output: true
 
+function check(str){
+    let bracket=[]
+    let star=[]
+    for(let i in str){
+        if(str[i]=='(')bracket.push(i)
+        else if(str[i]=="*")star.push(i)
+        else {
+            if(bracket.length>0)bracket.pop()
+            else if(star.length>0)star.pop()
+            else return false
+        }
+    }
+    while(bracket.length){
+        
+        if(bracket.length!=star.length|| bracket[bracket.length-1]>star[star.length-1]){return false}
+        else{
+            bracket.pop()
+            star.pop()
+        }
+    }
+    return true
+}
+let str="(*"
+console.log(check(str))

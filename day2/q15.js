@@ -9,3 +9,20 @@
 // Input: root = [1,2,3,4,null,5,6,null,null,7]
 // Output: 7
 
+function leftmost(root) {
+    let que = [root];
+    let node = root;
+    while (que.length){
+        if(!que){
+            return;
+        }
+        node = que.pop();
+        if(node.right){
+            que.unshift(node.right);
+        }
+        if(node.left){
+            que.unshift(node.left);
+        }
+    }
+    return node.val;
+};
