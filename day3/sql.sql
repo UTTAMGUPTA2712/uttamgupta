@@ -75,7 +75,9 @@ CASE WHEN (SELECT SUM(distance) FROM Rides WHERE user_id=u.id) IS NULL THEN 0
 ELSE (SELECT SUM(distance) FROM Rides WHERE user_id=u.id)
 END AS travelled_distance FROM Users AS u ORDER BY travelled_distance DESC, name
 -- 33. Group Sold Products By The Date
+SELECT sell_date,COUNT(DISTINCT product) AS num_sold,GROUP_CONCAT(DISTINCT product ORDER BY product) as products FROM Activities GROUP BY sell_date ORDER BY sell_date
 -- 34. Patients With a Condition
+SELECT * FROM Patients WHERE conditions LIKE '% DIAB1%' OR conditions LIKE 'DIAB1%'
 -- 35. Customer Who Visited but Did Not Make Any Transactions
 -- 36. Bank Account Summary II
 -- 37. Fix Names in a Table

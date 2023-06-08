@@ -1,0 +1,53 @@
+Design stack overflow
+
+
+User list : Email. Name. Question posted. Question answered. Reputation level.
+
+Question.: User. Answer.: User. Reputation. Likes. Comments. 
+
+In the main page there will be a login option And. Create user option. In create user option. The user would give details. 
+
+After login. The usual means we all the posted questions on the list. 
+User gets you wants to go to. There is a question posting option at the top. 
+In question post in. Using and post the question. If he wants to answer anyone, he can answer it Or. 
+Read others answer then give them likes or comments for increase their reputation. By supporting them. That's it.
+
+
+documentation
+
+The execution of the provided code will follow the following steps:
+
+1. The code defines several classes: `Question`, `Answers`, and `User`. These classes represent the main entities in the question-and-answer system.
+
+2. It defines various functions for user input and data manipulation, such as `generateRandomNumber()` to generate a random ID, `isEmail()` to validate email addresses, and `getMultipleInputs()` to get multiple tags separated by commas.
+
+3. An array `question` is initialized to store instances of the `Question` class. Some initial questions are added to this array.
+
+4. An array `users` is initialized to store instances of the `User` class. Some initial user objects are created and added to this array.
+
+5. The `Start()` function is called to initiate the program. It displays a menu with options to login, create a user, or exit.
+
+6. If the user selects the login option, the `Login()` function is called. It prompts the user for their email and password, checks if the email exists in the `users` array, and verifies the password. If successful, the user is logged in and directed to the main page (`MainPage()`).
+
+7. If the user selects the create user option, the `CreateUser()` function is called. It prompts the user for their name, email, password, and confirms the password. If the email is valid and the passwords match, a new `User` object is created and added to the `users` array.
+
+8. The `MainPage()` function displays a menu with options to post a question, search for a question, or view the user's profile. Based on the user's choice, corresponding functions are called: `PostQuestion()`, `SearchQuestion()`, or `currentUser.ShowDetails()`.
+
+9. The `PostQuestion()` function prompts the user for a question heading, the question itself, and tags. It creates a new `Question` object and adds it to the `question` array.
+
+10. The `SearchQuestion()` function prompts the user for a tag to search for. It searches through the `question` array for matching tags and displays the found questions. The user can select a question to view its details and interact with it.
+
+11. The `Question` class has a method `ViewQues()` to display the details of a question. It shows the question heading, tags, the question itself, and any posted answers. The user can choose to post their answer, add likes/comments to existing answers, or exit.
+
+12. The `PostAnswer()` function prompts the user for their answer, creates a new `Answers` object, and adds it to the `answerposted` array of the current question.
+
+13. The `ViewAns()` function displays the details of an answer, including the answerer's name, ID, the answer itself, likes, and comments.
+
+14. The `IncreaseReputation()` function increases the reputation of the answerer when someone helps them by providing feedback.
+
+15. The program continues to prompt the user with different options based on their interactions until they choose to exit.
+
+Overall, the code sets up a basic question-and-answer system where users can create accounts, post questions, search for questions, and interact with answers.
+
+Working
+

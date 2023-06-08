@@ -1,0 +1,52 @@
+Design ATM
+
+
+normal users: name, phone number ,address, amount, transactions ,transaction limit
+current user: normal user, GST number, business name
+
+features :
+add user
+Login
+money withdrawal
+change password
+add money
+balance check
+View transactions 
+Money transfer
+
+
+The front page there will be the 2 option idev create user or login with user
+if we create a user then we have to fill the form
+or else
+First of all account number is entered then it asks for password then we can see the different type of features that we can use then we select anyone 
+Balance check: viewers see all the information regarding the user
+Money transfer: it will ask for another account details and the money we have to transfer if we have enough money it will be deducted and stored at another ones 
+Money withdrawal: will ask for how much money we want to withdraw it will check whether we have that much amount or not the money will be deducted and we will get the cash and under the limit
+add money :first of all we have to give account detail It will ask for the confirmation whether we have got the right one or not then it will ask was to deposit the money I will get a slip
+In change password : it will ask for previous password confirm the new password twice
+view transaction: can view transaction we can see all the transactions that are there for the given user
+
+
+documentaiion
+
+This code is a simple banking application that allows users to create accounts, log in, and perform various banking transactions. Here's a summary of how it works:
+
+1. The code defines two classes: `User` and `CurUser` (Current User). These classes represent different types of users, with `CurUser` having some additional features compared to a regular `User`.
+2. The `User` class has properties such as name, phone number, address, amount (balance), account number, password, and transaction-related variables.
+3. The `User` class has methods for adding money, changing password, showing account details, showing transaction history, and performing money withdrawal and transfer.
+4. The `CurUser` class extends the `User` class and adds additional properties specific to a current user, such as GST number and business name. It also overrides the `ShowDetail` method to include the business details.
+5. The `generateRandomNumber` function generates a random 10-digit account number for a user.
+6. The code initializes an array called `users` with some pre-defined user objects.
+7. The `Start` function displays the initial menu options to either log in or create a new user account.
+8. If the user chooses to log in, the `Login` function prompts for an account number and password, verifies them against the stored user objects, and sets the `currentUser` variable.
+9. Once logged in, the `Features` function displays a menu of options for the user to choose from, such as changing the password, performing money transfer or withdrawal, viewing transactions, checking balance, adding money, or exiting.
+10. The user's chosen feature is executed based on the input, and the corresponding method of the `currentUser` object is called.
+11. The code continues to prompt the user for feature choices until they choose to exit.
+12. If the user chooses to create a new user account, the `ChooseUser` function prompts for user details and creates a new `User` or `CurUser` object based on the chosen option.
+13. The new user object is added to the `users` array.
+14. The code then goes back to the initial menu to either log in or create another user account.
+
+Overall, this code provides a basic banking system with user authentication and basic banking transactions.
+
+Working 
+
