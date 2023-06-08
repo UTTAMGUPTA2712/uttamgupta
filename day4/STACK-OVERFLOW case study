@@ -51,3 +51,5 @@ Overall, the code sets up a basic question-and-answer system where users can cre
 
 Working
 
+
+npm i ansi-regex prompt-sync strip-ansi

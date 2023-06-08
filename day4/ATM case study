@@ -50,3 +50,4 @@ Overall, this code provides a basic banking system with user authentication and 
 
 Working 
 
+npm i ansi-regex prompt-sync strip-ansi
