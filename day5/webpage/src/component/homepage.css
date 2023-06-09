@@ -1,0 +1,44 @@
+#top,
+#main {
+    height: 100vh;
+    width: 100%;
+}
+#carosal {
+    padding: 30px 65px;
+    font-size: 36px;
+    color: #fd853d;
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+    font-family: "Oswald", sans-serif;
+}
+.block {
+    display: inline-block;
+    padding: 0 40px 0 60px;
+    margin: 0;
+}
+.description {
+    font-size: 18px;
+    color: #ffffff;
+    font-family: " Open sans", sans-serif;
+}
+.carobutton {
+    font-family: " Open sans", sans-serif;
+    border: 2px solid #fd853d;
+    background-color: #ffffff00;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 18px 36px;
+    font-style: none;
+    text-decoration: none;
+    font-weight: 700;
+}
+.carobutton:hover {
+    background-color: #fd853d;
+}
+span {
+    font-size: 50px;
+    display: inline-block;
+    position: absolute;
+    bottom: 35%;
+}
