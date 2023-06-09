@@ -62,7 +62,7 @@ const Login = () => {
                 <div className="right child nonactive">
                     <div className="childitem">
                         <h1>WELCOME BACK!</h1>
-                        <NavLink to="/signup" className="navi">
+                        <NavLink to="/" className="navi">
                             didn't have an account yet?
                             <br />
                             <br />
